@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    color: white;   
+    background-image: url(./Images/Sfondo2.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}   
+
+#titolo{
+  background-color: black;
+  border: 4px solid white;
+  border-radius: 20px;
+  max-width: 150px;
+  padding:10px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#register-form{
+    border-bottom: 1px solid white;
+}
+
+#submit{
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  padding: 10px 30px;
+  border: 2px, solid white;;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login-link{
+  margin-top:10px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.username, .email, .password, .confirm_password{
+    width: 100%;
+    background-color: black;;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    padding-bottom:10px;
+    width: 40vw;
+}
+
+input{
+  width:35vw;
+}
+
+.username.errorj span,
+.email.errorj span,
+.password.errorj span,
+.confirm_password.errorj span {
+    display: inline;  
+}
+
+.username span,
+.email span,
+.password span,
+.confirm_password span {
+    display: none;
+}
+
+form img{
+    opacity: 0;
+    width: 10px;
+    margin-right: 10px;
+}
+
+.errorj {
+  margin-top: 20px;
+  padding: 5px;
+  background-color: red;
+}
+
+.errorj span {
+    opacity: 1;
+    font-size: 14px;
+}
+
+.errorj img {
+    opacity: 1;
+}
+
+.errorj input, .errorj #upload {
+    border-color: #d01b2d;
+}
